@@ -6,14 +6,7 @@ const staffCourse = async (req, res) => {
   console.log("Query parameters:", req.query.payload);
 
   try {
-    //  let lecturer = await staffModel.findOne({ staffId, school})
-
-    // if (!lecturer) {
-    //   console.log("Lecturer not found");
-    //   return res.status(404).json({
-    //     message: "Lecturer not found",
-    //   });
-    // }
+   
 
     console.log(school);
 

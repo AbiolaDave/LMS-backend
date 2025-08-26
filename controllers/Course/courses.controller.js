@@ -8,7 +8,7 @@ const findCourses = async (req, res) => {
   try {
     let filter = { school };
 
-    // If there's a search query, add a case-insensitive regex filter
+ 
     if (search) {
       const regex = new RegExp(search, "i");
       filter.$or = [

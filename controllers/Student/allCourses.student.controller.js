@@ -11,10 +11,8 @@ const fetchAllCourses = async (req, res) => {
       return res.status(404).json({ message: "Student not found" });
     }
 
-    // Step 1: Get course codes from student document
     const courseCodes = student.course;
 
-    // Step 2: Find all course documents that match those codes
     const courses = await courseModel.find({
       courseCode: { $in: courseCodes },
     });

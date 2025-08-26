@@ -26,5 +26,3 @@ const allCourses = async (req, res) => {
 module.exports = {
   allCourses,
 };
-// const courseModel = require("../../../models/Courses/courses.model");
-// const allCourses = async (req, res) => {
